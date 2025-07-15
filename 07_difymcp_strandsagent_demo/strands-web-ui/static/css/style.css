@@ -1,0 +1,57 @@
+/* Main styles */
+.main {
+    padding: 1rem;
+}
+
+/* Thinking process box */
+.thinking-box {
+    background-color: #f0f7ff;
+    padding: 10px;
+    border-left: 4px solid #4361ee;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-family: monospace;
+    white-space: pre-wrap;
+}
+
+/* Tool usage box */
+.tool-box {
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-left: 4px solid #3d5a80;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* Header styling */
+h1 {
+    color: #3d5a80;
+    margin-bottom: 0.5rem;
+}
+
+/* Custom button styling */
+.stButton > button {
+    background-color: #4361ee;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.stButton > button:hover {
+    background-color: #3a56d4;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Custom expander styling */
+.streamlit-expanderHeader {
+    font-weight: bold;
+    color: #3d5a80;
+}
+
+/* Chat message styling */
+[data-testid="stChatMessageContent"] {
+    border-radius: 8px;
+    padding: 0.75rem;
+}
