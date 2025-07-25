@@ -18,7 +18,7 @@
 | 3 | Strands 构建自定义的 tool和使用 | Strands 内置工具调用，工具自定义定义与注册 | 开发一个自定义工具（如天气查询）并集成到 Strands Agent 在 Strands Agent 中注册并调用内置工具 | 5 min | L200 | [03_strands_tooluse](03_strands_tooluse/) |
 | 4 | Strands 融合 MCP | Strands 中对于MCP Server的发现，集成和使用 | 通过MCP方式注册多个MCP Server 到Agentic 并实现调用 | 5 min | L200 | [04_strands_mcp](04_strands_mcp/) |
 | 6 | Strands 与A2A 协议 | 使用A2A协议封装 Strands Agents 实现 Agents 远程协作 | 用Strands 和 A2A SDK开发 remote agents和client agent，实现multi agents 远程协作 | 5 min | L300 | [06_a2a_agents](06_a2a_agents/) |
-| 7 | Strands 与 dify | Strands 中接入作为 MCP 服务的 dify 工作流 | 将dify工作流作为mcp接入stands agent，构建一个患者接收分诊agent。基于Strands Web UI开发，使用Python MCP SDK 实现 Dify workflow mcp  | 5 min | L300 | [07_difymcp_strandsagent_demo](07_difymcp_strandsagent_demo/) |
+| 9 | Strands Agent出题机器人 | 基于Strands Agent搭建自动出题机器人 | 用Strands 搭建自动出题机器人Demo，同时可以监测评估Agent执行效率 | 5 min | L400 | |
 
 ## 教程特点
 - **简洁高效**: 每节控制在5分钟内
@@ -64,7 +64,7 @@ python3 first_agent.py
 - [第三课：Strands 构建自定义的 tool和使用](03_strands_tooluse/strands-tooluse.py)
 - [第四课：Strands 融合 MCP](04_strands_mcp/README.md)
 - [第六课：Strands 与A2A 协议](06_a2a_agents/)
-- [第七课：Strands 与 dify](07_difymcp_strandsagent_demo/)
+- [第九课：Strands 搭建自动出题机器人]()
 
 ## 参与贡献
 欢迎提交Pull Request来帮助改进这个教程系列！
