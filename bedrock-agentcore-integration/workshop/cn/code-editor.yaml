@@ -1297,6 +1297,15 @@ Resources:
           hostname: ${InstanceName}
           runcmd:
             - mkdir -p ${HomeFolder} && chown -R ${CodeEditorUser}:${CodeEditorUser} ${HomeFolder}
+            - TOKEN=$(curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 3600")
+            - REGION=$(curl -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/meta-data/placement/region)
+            - aws configure set region $REGION
+            - cd /workshop
+            - uv venv --python 3.11
+            - uv pip install strands-agents strands-agents-tools bedrock-agentcore bedrock-agentcore-starter-toolkit ddgs mcp playwright
+            - source .venv/bin/activate
+            - git clone https://github.com/aws-samples/sample-strands-in-5-minutes
+            - cd sample-strands-in-5-minutes/bedrock-agentcore-integration/workshop/cn
       Tags:
       - Key: Name
         Value: !Ref InstanceName
